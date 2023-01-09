@@ -70,6 +70,10 @@ i18n.use(initReactI18next).init({
                     'dogsVaccinesl4': 'Annual polivalent vaccine reinforcement and rabies vaccine',
                     'dogsRemoveParasitesl1': 'Annual internal and/or external parasites removal.',
                 },
+                'ongDetails': {
+                    'pets': 'Pets',
+                    'reviews': 'Reviews',
+                },
             }
         },
         es: {
@@ -135,6 +139,10 @@ i18n.use(initReactI18next).init({
                     'dogsVaccinesl3': 'Refuerzo de polivalente a las 12 semanas de vida',
                     'dogsVaccinesl4': 'Refuerzo de polivalente y vacuna contra la rabía anualmente',
                     'dogsRemoveParasitesl1': 'Desparasitación interna y/o externa anualmente',
+                },
+                'ongDetails': {
+                    'pets': 'Mascotas',
+                    'reviews': 'Opiniones',
                 },
             }
         }

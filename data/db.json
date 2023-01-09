@@ -186,5 +186,50 @@
       "rating": 3,
       "id": 5
     }
+  ],
+  "reviews": [
+    {
+      "author": "Pedro",
+      "ong": "Ayudemos a las mascotas",
+      "comment": "Muy bueno",
+      "rating": 5,
+      "id": 1
+    },
+    {
+      "author": "Juan",
+      "ong": "Ayudemos a las mascotas",
+      "comment": "Bastante bien",
+      "rating": 4,
+      "id": 2
+    },
+    {
+      "author": "Marcelo",
+      "ong": "Ayudemos a las mascotas",
+      "comment": "No logramos concretar por falta de respuestas",
+      "rating": 2,
+      "id": 3
+    },
+    {
+      "author": "Julián",
+      "ong": "ONG de Gaspar",
+      "comment": "Muy recomendables",
+      "rating": 4,
+      "id": 4
+    },
+    {
+      "author": "Joaquín",
+      "ong": "Narices frías",
+      "comment": "Muy amables",
+      "rating": 5,
+      "id": 5
+    },
+    {
+      "author": "Pato",
+      "ong": "Narices frías",
+      "comment": "Excelente",
+      "rating": 5,
+      "id": 6
+    }
   ]
+
 }

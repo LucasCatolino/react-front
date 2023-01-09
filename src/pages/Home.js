@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import PetList from "../components/Pet/PetList";
 import useFetch from "../useFetch";
+import LoadingToast from "../components/General/LoadingToast";
+import ErrorToast from "../components/General/ErrorToast";
 
 const Home = () => {
 
@@ -12,10 +14,8 @@ const Home = () => {
             <h1>{ t('mainTitle') }</h1>
             <h3>{ t('mainSubtitle') }</h3>
             <div className="mainContainer">
-                { error &&
-                    <div>{ error }</div>}
-                { isPending &&
-                    <div>Loading...</div>}
+                <ErrorToast error= { error }/>
+                <LoadingToast isPending={ isPending }/>
                 { pets &&
                     <PetList pets={ (pets.filter((pet) => pet.size === 0)).slice(0, 3) } title={ t('home.firstCardTitle') + t('home.firstCardPhrase') }/> }
                 { pets &&

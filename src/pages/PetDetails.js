@@ -2,7 +2,8 @@ import { useParams, Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import PetCardDetails from "../components/Pet/PetCardDetails";
 import useFetch from "../useFetch";
-
+import LoadingToast from "../components/General/LoadingToast";
+import ErrorToast from "../components/General/ErrorToast";
 
 const PetDetails = () => {
 
@@ -23,14 +24,8 @@ const PetDetails = () => {
 */
     return ( 
         <div className="container-PetDetails">
-            { isPending && 
-                <div>Loading...</div> }
-            { error && 
-                <div>
-                    <p>{ error }</p>
-                    <Link to="/">Back</Link>
-                </div>
-            }
+            <ErrorToast error= { error }/>
+            <LoadingToast isPending={ isPending }/>
             {/* pet && 
                 <article>
                     <h2>{ pet.name }</h2>

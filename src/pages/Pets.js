@@ -2,6 +2,8 @@ import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
 import useFetch from "../useFetch";
 import PetCardList from '../components/Pet/PetCardList';
+import LoadingToast from "../components/General/LoadingToast";
+import ErrorToast from "../components/General/ErrorToast";
 
 const Pets = () => {
 
@@ -10,10 +12,8 @@ const Pets = () => {
 
     return (
         <div className="containerRow-Pets container-fluid">
-            { error &&
-                <div>{ error }</div>}
-            { isPending &&
-                <div>Loading...</div>}
+            <ErrorToast error= { error }/>
+            <LoadingToast isPending={ isPending }/>
             <div className="container-fluid">
                 <div className="row">
                     <div className="col">

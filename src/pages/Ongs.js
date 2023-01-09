@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
+import ErrorToast from '../components/General/ErrorToast';
+import LoadingToast from '../components/General/LoadingToast';
 import OngCard from '../components/Ong/OngCard';
 import useFetch from "../useFetch";
 
@@ -9,10 +11,8 @@ const Ongs = () => {
     
     return (
         <div className="containerRow-Pets container-fluid">
-            { error &&
-                <div>{ error }</div>}
-            { isPending &&
-                <div>Loading...</div>}
+            <ErrorToast error= { error }/>
+            <LoadingToast isPending={ isPending }/>
             <div className="container-fluid">
                 <div className="row">
                     <div className="col">
