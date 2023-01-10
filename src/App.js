@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './Navbar';
+import Navbar from './components/General/Navbar';
 import Home from './pages/Home';
 import Create from './Create';
 import PetDetails from './pages/PetDetails';
@@ -8,6 +8,7 @@ import Pets from './pages/Pets';
 import Ongs from './pages/Ongs';
 import PetCares from './pages/PetCares';
 import OngDetails from './pages/OngDetails';
+import Login from './pages/Login';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
             <Route path='/ongs' element={ <Ongs/> }/>
             <Route path='/petCares' element={ <PetCares/> }/>
             <Route path='/ong/:id' element={ <OngDetails/> }/>
+            <Route path='/login' element={ <Login/> }/>
             <Route path='*' element={ <NotFound/> }/>
           </Routes>
         </div>

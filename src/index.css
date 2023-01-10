@@ -322,3 +322,23 @@ h3 {
   align-content: center;
   justify-content: space-between;
 }
+
+/* Login */
+/*.container-Login{
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}*/
+
+.container-Login{
+  margin-top: 70px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+}

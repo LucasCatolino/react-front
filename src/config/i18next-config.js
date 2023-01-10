@@ -74,6 +74,14 @@ i18n.use(initReactI18next).init({
                     'pets': 'Pets',
                     'reviews': 'Reviews',
                 },
+                'login': {
+                    'email': 'Email',
+                    'password': 'Password',
+                    'rememberMe': 'Remember me',
+                    'login': 'Log in',
+                    'registerAsNGO': 'Register as NGO',
+                    'registerAsAdopter': 'Register as adopter',
+                },
             }
         },
         es: {
@@ -143,6 +151,14 @@ i18n.use(initReactI18next).init({
                 'ongDetails': {
                     'pets': 'Mascotas',
                     'reviews': 'Opiniones',
+                },
+                'login': {
+                    'email': 'Email',
+                    'password': 'Contraseña',
+                    'rememberMe': 'Recordarme',
+                    'login': 'Ingresar',
+                    'registerAsNGO': 'Registrarse como ONG',
+                    'registerAsAdopter': 'Registrarse como adoptante',
                 },
             }
         }
